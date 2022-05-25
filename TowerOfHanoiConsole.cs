@@ -43,13 +43,6 @@ namespace TestConsole
                 }
                 return true;
             }
-            //if (towers[2].Count == 3)
-            //{
-            //    if (towers[2].ElementAt(0) == 1 && towers[2].ElementAt(1) == 2 && towers[2].ElementAt(2) == 3)
-            //    {
-            //        return true;
-            //    }
-            //}
             return false;
         }
 
@@ -117,40 +110,6 @@ namespace TestConsole
         public int NrOfOperators
         {
             get { return 6; }
-        }
-        public void display()
-        {
-            //Console.SetCursorPosition(0, 0);
-            Console.WriteLine("  A  |  B  |  C");
-            Console.WriteLine("---------------");
-            for (int i = 0; i < N; i++)
-            {
-                string d1 = " ", d2 = " ", d3 = " ";
-                try
-                {
-                    d1 = towers[0].ElementAt(i).ToString();
-                }
-                catch (Exception e)
-                {
-                }
-                try
-                {
-                    d2 = towers[1].ElementAt(i).ToString();
-                }
-                catch (Exception e)
-                {
-                }
-                try
-                {
-                    d3 = towers[2].ElementAt(i).ToString();
-                }
-                catch (Exception e)
-                {
-                }
-                Console.WriteLine("  " + d1 + "  |  " + d2 + "  |  " + d3);
-            }
-            Console.WriteLine("\n");
-            //Console.ReadLine();
         }
         public override string ToString()
         {
